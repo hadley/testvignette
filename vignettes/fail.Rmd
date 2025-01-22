@@ -8,5 +8,11 @@ vignette: >
 ---
 
 ```{r setup}
-stop("This is a problem")
+f <- function() g()
+g <- function() h()
+h <- function() stop("This is a problem")
+```
+
+```{r}
+f()
 ```
