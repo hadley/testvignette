@@ -1,0 +1,12 @@
+---
+title: "fail"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fail}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup}
+stop("This is a problem")
+```
